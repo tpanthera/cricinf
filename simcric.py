@@ -19,6 +19,6 @@ for div_tags in soup.find_all('div', attrs={"class": "cb-lv-scrs-col text-black"
 for result in soup.find_all('div', attrs={"class": "cb-lv-scrs-col cb-text-complete"}):
           results.append(result.text)
 
- 
-print(score[3],results[3])
-toaster.show_toast(title=score[3],msg=results[3])
+for i in range(0,len(score)): 
+        print(score[i],results[i])
+        toaster.show_toast(title=score[i],msg=results[i])
